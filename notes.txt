@@ -1,5 +1,6 @@
-mutation = alter data
 
-go run github.com/99designs/gqlgen init
-
-go run github.com/99designs/gqlgen generate
+0. go run github.com/99designs/gqlgen init
+1. create file schema.graphqls with all entities and its queries, inputs and mutations
+2. go run github.com/99designs/gqlgen generate
+3. edit file resolver.go to include the DAO of each entity
+4. edit file schema.resolvers.go to implement all data operations 
